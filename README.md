@@ -59,3 +59,4 @@ String HTML =
 </body>\
 </html> ";
 ```
+## Funcionamiento
