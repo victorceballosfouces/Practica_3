@@ -3,7 +3,7 @@
 ## Codigo_3.1_Web
 
 ###  Main.cpp
-```
+```cpp
 #include <Arduino.h>
 #include <WiFi.h>
 #include <WebServer.h>
@@ -44,7 +44,7 @@ server.send(200, "text/html", HTML);
 }
 ```
 ###  Web.cpp
-```
+```cpp
 #include <Arduino.h>
 #include <WiFi.h>
 #include <WebServer.h>
@@ -63,7 +63,7 @@ String HTML =
 
 
 ## Codigo_3.2_Bluetooth
-```
+```cpp
 #include <Arduino.h>
 
 #include "BluetoothSerial.h"
