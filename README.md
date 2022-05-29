@@ -87,4 +87,17 @@ delay(20);
 }
 ```
 ## Funcionamiento
-
+EL siguiente código nos permite conectarnos al bluetooth serie con nuestro bluetooth convencional. Para esto usaremos una aplicación android en el móvil "Serial Bluetooth Terminal" y se creará un puente entre lo que escribamos en dicha aplicación y las salidas que se obtienen a traves de la impresión serie. Respecto al código, inicializamos el puerto serie y el serial BT estableciendo como se llamará.
+```
+Serial.begin(115200);
+SerialBT.begin("1234");
+```
+Después en el loop, definimos dos condicionales ifs con los que leemos el BT de nuestra aplicación móvil escrbiendolo en el serial BT de la esp32 y viceversa.
+```
+if (Serial.available()) {
+SerialBT.write(Serial.read());
+}
+if (SerialBT.available()) {
+Serial.write(SerialBT.read());
+}
+```
