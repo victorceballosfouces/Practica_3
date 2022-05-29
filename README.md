@@ -1,7 +1,6 @@
 # Practica_3
-
+El objetivo de la practica es comprender el funcionamiento de wifi y bluetooth de la propia esp32. Para lo cual realizaremos una practica donde generaremos un web server utilizando nuestra ESP32 y tambien una comunicacion serie con una aplicacion de un movil con bluetooth.
 ## Codigo_3.1_Web
-
 ###  Main.cpp
 ```cpp
 #include <Arduino.h>
