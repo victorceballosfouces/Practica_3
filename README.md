@@ -58,6 +58,11 @@ String HTML =
 </body>\
 </html> ";
 ```
+
+![Image text](https://github.com/victorceballosfouces/Practica_3/blob/main/Practica_3.1/Imagen2_3.1.png)
+
+![Image text](https://github.com/victorceballosfouces/Practica_3/blob/main/Practica_3.1/Imagen_3.1.png)
+
 ## Funcionamiento
 Primero, con el archivo Web.cpp declaramos una variable tipo string donde crearemos nuestro fichero HTML. Aqui solamente escribimos dos lineas de texto en la web con dos headers (h1,h5).
 Ya en el main incluimos nuestro fichero adicional que incluye solamente la pagina html con extern String HTML. Después declaramos las variables que nos daran la SSID y contraseña para conectarnos a la red Wifi y el objeto Web ```WebServer server(80)```. En el setup() inicializamos el puerto serie y nos intentamos conectar al servidor wifi con la id y password proporcionadas anteriormente ```WiFi.begin(ssid, password)```. Una vez que hemos comprobado si nos conectamos correctamente, sacamos por el puerto serial la IP y definimos la ruta donde estará el objeto server ```server.on("/", handle_root)```. Handle_root es la función que almacena el método ```server.send(200, "text/html", HTML)``` que es el encargado de cargar nuestro fichero html creado en Web.cpp. Finalmente iniciamos el servidor HTTP con ```server.begin()``` y en el loop llamando simplemente a ```server.handleClient()``` empezamos todo el proceso.
