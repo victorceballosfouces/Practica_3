@@ -61,7 +61,6 @@ String HTML =
 
 ![Image text](https://github.com/victorceballosfouces/Practica_3/blob/main/Practica_3.1/Imagen2_3.1.png)
 
-![Image text](https://github.com/victorceballosfouces/Practica_3/blob/main/Practica_3.1/Imagen_3.1.png)
 
 ## Funcionamiento
 Primero, con el archivo Web.cpp declaramos una variable tipo string donde crearemos nuestro fichero HTML. Aqui solamente escribimos dos lineas de texto en la web con dos headers (h1,h5).
